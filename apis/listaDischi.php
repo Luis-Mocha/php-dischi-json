@@ -46,5 +46,6 @@ $listaDischi = [
     ],
 ];
 
-echo $listaDischi;
-var_dump($listaDischi);
+// - trasformo l'informazione
+header( 'Content-type: application/json' );
+echo json_encode($listaDischi);
