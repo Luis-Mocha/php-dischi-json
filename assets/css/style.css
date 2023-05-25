@@ -1,0 +1,23 @@
+/* --- HEADER --- */
+header {
+    background-color: rgb(6,19,31);
+}
+
+header nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24,216,96);
+}
+nav i {
+    font-size: 50px;
+    color: rgb(24,216,96);
+}

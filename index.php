@@ -1,4 +1,5 @@
 <?php
+// echo __DIR__;
 ?>
 
 <!DOCTYPE html>
@@ -9,13 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio php-dischi-json</title>
 
+    <!-- link Font-awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer'/>
     <!-- link Bootstrap Css -->
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <!-- link style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
     <div id="app">
-        <h1>prova</h1>
+        
+        <?php include_once __DIR__ . '/components/header.php' ?>
 
 
     
