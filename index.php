@@ -23,7 +23,26 @@
         
         <?php include_once __DIR__ . '/components/header.php' ?>
 
+        <main>
+            <div id="album-container" class="container">
 
+                <div v-for="(elem,index) in arrayDischi" :key="index" class="card-album rounded">
+                    
+                    <img :src="elem.poster" :alt="elem.title + ' Album poster'">
+
+                    <div class="card-title text-uppercase mt-2 fs-4 text-center fw-bold">
+                        {{ elem.title }}
+                    </div>
+                    <div class="card-author">
+                        {{elem.author}}
+                    </div>
+                    <div class="card-year fw-bold fs-5">
+                        {{elem.year}}
+                    </div>
+                </div>
+            </div>
+
+        </main>
     
     </div>  <!-- fine #app -->
     

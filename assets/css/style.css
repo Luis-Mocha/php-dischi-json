@@ -1,14 +1,17 @@
+*{
+    color: white;
+}
+    
 /* --- HEADER --- */
 header {
     background-color: rgb(6,19,31);
 }
 
 header nav {
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
 nav h1 {
@@ -20,4 +23,45 @@ nav h1 {
 nav i {
     font-size: 50px;
     color: rgb(24,216,96);
+}
+
+/* --- MAIN --- */
+main {
+    background-color: rgb(29,45,60);
+    height: calc(100vh - 80px);
+    padding: 20px 0;
+    overflow: auto;
+}
+
+#album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-album {
+    background-color: rgb(6,19,31);;
+    width: calc(100% / 3 - 80px);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 20px;
+}
+
+.card-album img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .card-album {
+        width: calc(100% / 2 - 80px);
+    }
+}
+@media screen and (max-width: 576px) {
+    .card-album {
+        width: calc(100% / 1 - 80px);
+    }
 }
