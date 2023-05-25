@@ -26,8 +26,8 @@
         <main>
             <div id="album-container" class="container">
 
-                <div v-for="(elem,index) in arrayDischi" :key="index" class="card-album rounded">
-                    
+                <div v-for="(elem,index) in arrayDischi" :key="index" class="card-album rounded" @click="showModal(elem)">
+
                     <img :src="elem.poster" :alt="elem.title + ' Album poster'">
 
                     <div class="card-title text-uppercase mt-2 fs-4 text-center fw-bold">
