@@ -31,28 +31,19 @@ main {
     height: calc(100vh - 80px);
     padding: 20px 0;
     overflow: auto;
-}
-
-#album-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    position: relative;
 }
 
 .card-album {
-    background-color: rgb(6,19,31);;
-    width: calc(100% / 3 - 80px);
+    background-color: rgb(6,19,31);
+    /* width: calc(100% / 3 - 80px); */
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    margin-bottom: 20px;
-}
-
-.card-album img {
-    width: 100%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

@@ -24,23 +24,26 @@
         <?php include_once __DIR__ . '/components/header.php' ?>
 
         <main>
-            <div id="album-container" class="container">
+            <div class="container">
+                <div id="album-container" class="row gap-3 justify-content-evenly">
 
-                <div v-for="(elem,index) in arrayDischi" :key="index" class="card-album rounded" @click="showModal(elem)">
-
-                    <img :src="elem.poster" :alt="elem.title + ' Album poster'">
-
-                    <div class="card-title text-uppercase mt-2 fs-4 text-center fw-bold">
-                        {{ elem.title }}
-                    </div>
-                    <div class="card-author">
-                        {{elem.author}}
-                    </div>
-                    <div class="card-year fw-bold fs-5">
-                        {{elem.year}}
+                    <div v-for="(elem,index) in arrayDischi" :key="index" class="card-album rounded col-3" @click="showModal(elem)">
+    
+                        <img :src="elem.poster" :alt="elem.title + ' Album poster'" class="img-fluid w-100">
+    
+                        <div class="card-title text-uppercase mt-2 fs-4 text-center fw-bold">
+                            {{ elem.title }}
+                        </div>
+                        <div class="card-author">
+                            {{elem.author}}
+                        </div>
+                        <div class="card-year fw-bold fs-5">
+                            {{elem.year}}
+                        </div>
                     </div>
                 </div>
             </div>
+            
 
         </main>
     
