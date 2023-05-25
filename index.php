@@ -44,6 +44,14 @@
                 </div>
             </div>
             
+            <div id="modal" class="d-none">
+                <button @click="closeModal()">
+                    x
+                </button>
+                <div id="modal-card">
+
+                </div>
+            </div>
 
         </main>
     
